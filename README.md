@@ -1,17 +1,55 @@
-# Kali Linux Mac Address Changer
+# Kali Linux Mac address changer
 - Mac address renewal/changing tool.
  
-## There seem to be two kinds of MAC addresses:
+### What's a MAC Address and how do I find it?
 
-- Actual addresses assigned to network adapters when they were manufactured,
-Locally administered addresses, assigned to a network adapter by the OS or the user.
-The second-least-significant bit of the first byte of locally administered addresses must be 1, while the least-significant must always be 0. Thus, the last two bits of the first byte of any MAC address chosen by the user must be 10. When displaying the address in hexadecimal form, this means that the second character must be 2, 5, A or E.
+- Just like each house has it's own postal address, every device connected on a network
+has a Media Access Control (MAC) address, that uniquely identifies it. The MAC address is tied to the Network Interface Controller (NIC), a subcomponent of the larger device. The NIC is where you make your physical connection to the network, by plugging in an Ethernet cable or connecting to a WiFi signal.
 
-- Setting the NetworkAddress value in the registry to an address that does not satisfy this requirement has no effect. Therefore, the app only allows the user to set a MAC address that satisfies this requirement.
+---
+### What does a MAC address look like?
+
+- The MAC address is a 12 digit hexadecimal number that is most often displayed with a colon or hypen separating every two digits (an octet), making it easier to read.
+
+> Example:
+
+```console
+
+ A MAC address of 2c549188c9e3 is typically displayed as 2C:54:91:88:C9:E3 or 2c-54-91-88-c9-e3.
+
+```
+---
+
+### Can a device have more than one MAC address?
+
+- Yes. For each network interface in your device, there is a unique MAC address associated with it. So if your laptop has both an Ethernet port and Wi-Fi built-in, you will see two MAC addresses in the system configuration.
+
+### How do I find my MAC address?
+
+- In general, you will find MAC addresses in the system settings, general information, or network settings/status of your device. Occasionally, the MAC address is printed on a label affixed to the bottom of a device.
+
+It is important to note that manufacturers sometimes use different names to describe the MAC address, such as Hardware ID, Physical Address, Wireless ID, Wi-Fi Address, etc.
 
 
+#### For Windows Computers
 
-### Tested On 
+1. Press Start + R on your keyboard
+2. In the Run window, type in cmd and click OK
+3. At the command prompt, type ipconfig /all and hit Enter
+4. The MAC address for each interface will be listed as Physical Address
+5. For wired interfaces, look for the term Ethernet or Gigabit in the name or description
+6. For wireless interfaces, look for the terms Wireless or Wi-Fi in the name or description
+
+#### For Mac Computers
+
+1. Open System Preferences
+2. Click on the Network icon
+3. Select the interface you wish to use, then click Advanced...
+4. The MAC address is listed under the Hardware tab
+
+---
+
+# Tested On 
 
  Sr. | Operating System | Version | Virtual Box | VM Ware | Network Type |
 --- | --- | --- | --- | --- | --- |
@@ -21,3 +59,9 @@ The second-least-significant bit of the first byte of locally administered addre
 4 | <img align="center" src="https://img.icons8.com/color/25/000000/kali-linux.png"> Kali Linux</img > | 2019.4 | <img algin="center" src="https://badgen.net/github/status/micromatch/micromatch/4.0.1">| <img algin="center" src="https://badgen.net/github/status/micromatch/micromatch/4.0.1">| <img algin="center" src="https://badgen.net/badge/Network/NAT/brown"> |
 5 | <img align="center" src="https://img.icons8.com/color/25/000000/kali-linux.png"> Kali Linux</img > | 2018.4 | <img algin="center" src="https://badgen.net/github/status/micromatch/micromatch/4.0.1">| <img algin="center" src="https://badgen.net/github/status/micromatch/micromatch/4.0.1">| <img algin="center" src="https://badgen.net/badge/Network/NAT/brown"> |
 
+---
+
+# Kali 
+```console
+
+```
