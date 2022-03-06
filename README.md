@@ -16,7 +16,8 @@ has a Media Access Control (MAC) address, that uniquely identifies it. The MAC a
 
 ```console
 
- A MAC address of 2c549188c9e3 is typically displayed as 2C:54:91:88:C9:E3 or 2c-54-91-88-c9-e3.
+ A MAC address of 2c549188c9e3 is typically
+ displayed as 2C:54:91:88:C9:E3 or 2c-54-91-88-c9-e3.
 
 ```
 ---
