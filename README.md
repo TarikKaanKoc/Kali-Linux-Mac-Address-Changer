@@ -10,7 +10,7 @@ has a Media Access Control (MAC) address, that uniquely identifies it. The MAC a
 
 ### What does a MAC address look like?
 
-- The MAC address is a 12 digit hexadecimal number that is most often displayed with a colon or hypen separating every two digits (an octet), making it easier to read.
+- The MAC address is a 12 digit hexadecimal number that is most often displayed with a colon or hypen separating every two digits (an sixed), making it easier to read.
 
 > Example:
 
@@ -75,13 +75,14 @@ benzersiz bir şekilde tanımlayan bir Medya Erişim Kontrolü (MAC) adresine sa
 
 ### MAC adresi neye benzer?
 
-- MAC adresi, çoğunlukla iki haneden (sekizli) ayrılan iki nokta üst üste veya kısa çizgi ile görüntülenen, okumayı kolaylaştıran 12 basamaklı bir onaltılık sayıdır.
+- MAC adresi, çoğunlukla iki haneden (altılı) ayrılan iki nokta üst üste veya kısa çizgi ile görüntülenen, okumayı kolaylaştıran 12 basamaklı bir onaltılık sayıdır.
 
 > Örnek:
 
 ```console
 
-  2c549188c9e3 MAC adresi tipik olarak 2C:54:91:88:C9:E3 veya 2c-54-91-88-c9-e3 olarak görüntülenir.
+  2c549188c9e3 MAC adresi tipik olarak 2C:54:91:88:C9:E3 
+  veya 2c-54-91-88-c9-e3 olarak görüntülenebilir.
 
 ```
 ---
